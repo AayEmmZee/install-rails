@@ -41,18 +41,8 @@ log_info "Updating Homebrew formulas ..."
 log_info "Installing Homebrew Services"
   brew tap gapple/services
 
-log_info "Installing Postgres, a good open source relational database ..."
-  brew install postgres --no-python
 
 
-log_info "Installing Redis, a good key-value database ..."
-  brew install redis
-
-log_info "Installing ImageMagick, to crop and resize images ..."
-  brew install imagemagick
-
-log_info "Installing rbenv, to change Ruby versions ..."
-  brew install rbenv
 
   if ! grep -qs "rbenv init" ~/.bash_profile; then
     printf '\n# load rbenv\n' >> ~/.bash_profile
