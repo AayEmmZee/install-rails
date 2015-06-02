@@ -44,8 +44,6 @@ log_info "Installing Homebrew Services"
 log_info "Installing Postgres, a good open source relational database ..."
   brew install postgres --no-python
 
-log_info "Starting Postgres ..."
-  brew services start postgres
 
 log_info "Installing Redis, a good key-value database ..."
   brew install redis
